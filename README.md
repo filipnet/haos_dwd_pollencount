@@ -1,4 +1,4 @@
-# Home Assistant Pollen Dispersal Integration
+# Home Assistant Pollen Count Integration
 
 This repository provides a YAML configuration for integrating Deutscher Wetterdienst (DWD) pollen dispersal data into Home Assistant. It utilizes the DWD Pollenflug integration and Mushroom Cards for an enhanced user interface.
 
@@ -8,31 +8,31 @@ This repository provides a YAML configuration for integrating Deutscher Wetterdi
 
 Before setting up this integration, ensure you have the following installed:
 
-Home Assistant Community Store (HACS): A powerful integration manager for Home Assistant.
-- Installation Guide: HACS Installation
+**Home Assistant Community Store (HACS):** A powerful integration manager for Home Assistant.
+- Installation Guide: [HACS Installation](https://hacs.xyz/docs/installation/manual)
 
-Mushroom Cards: A collection of customizable cards to beautify your Home Assistant dashboard.
+**Mushroom Cards:** A collection of customizable cards to beautify your Home Assistant dashboard.
 - Installation via HACS:
-* Navigate to HACS in your Home Assistant instance.
-* Go to the "Frontend" section.
-* Search for "Mushroom" and install the integration.
-* After installation, refresh your browser to apply changes.
+  * Navigate to HACS in your Home Assistant instance.
+  * Go to the "Frontend" section.
+  * Search for "Mushroom" and install the integration.
+  * After installation, refresh your browser to apply changes.
 - Official Repository: [Mushroom Cards GitHub](https://github.com/piitaya/lovelace-mushroom)
 
-# Installation Steps
+## Installation Steps
 
-Install DWD Pollenflug Integration:
+**Install DWD Pollenflug Integration:**
 - This integration fetches pollen forecasts from DWD for various regions in Germany.
 - Installation via HACS:
-* Open HACS in Home Assistant.
-* Navigate to the "Integrations" section.
-* Search for "DWD Pollenflug" and install the integration.
-* Restart Home Assistant to apply changes.
+  * Open HACS in Home Assistant.
+  * Navigate to the "Integrations" section.
+  * Search for "DWD Pollenflug" and install the integration.
+  * Restart Home Assistant to apply changes.
 - Official Repository: [DWD Pollenflug GitHub](https://github.com/mampfes/hacs_dwd_pollenflug)
 
-# Configure the Integration:
+## Configure the Integration:
 
-After installation, configure the integration by adding the provided YAML configuration to your configuration.yaml file. Ensure you specify your region and desired allergens.
+After installation, configure the integration by adding the provided YAML configuration to your `configuration.yaml` file. Ensure you specify your region and desired allergens.
 
 There is a file named `pollen_count.yml` in the root of the repository. Follow the instructions below to integrate DWD Pollenflug into your Home Assistant dashboard and configure it using YAML.
 
@@ -49,10 +49,10 @@ There is a file named `pollen_count.yml` in the root of the repository. Follow t
 
 By following these steps, you will have successfully integrated DWD Pollenflug into your Home Assistant dashboard and configured it using YAML.
 
-# Contributions
+## Contributions
 
 Contributions to enhance this integration are welcome. Please fork the repository and submit a pull request with your improvements.
 
-# License
+## License
 
 This project is licensed under the terms specified in the [LICENSE](LICENSE) file.
