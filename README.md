@@ -8,6 +8,16 @@ This repository provides a YAML configuration for integrating Deutscher Wetterdi
 
 ![Pollen Count Dashboard](images/pollen_count.png)
 
+## Table of Contents
+- [Home Assistant Pollen Count Integration](#home-assistant-pollen-count-integration)
+  - [Table of Contents](#table-of-contents)
+  - [Prerequisites](#prerequisites)
+  - [Installation Steps](#installation-steps)
+  - [Configure the Integration](#configure-the-integration)
+  - [Add to Dashboard](#add-to-dashboard)
+  - [Contributions](#contributions)
+  - [License](#license)
+
 ## Prerequisites
 
 Before setting up this integration, ensure you have the following installed:
@@ -34,13 +44,21 @@ Before setting up this integration, ensure you have the following installed:
   * Restart Home Assistant to apply changes.
 - Official Repository: [DWD Pollenflug GitHub](https://github.com/mampfes/hacs_dwd_pollenflug)
 
-## Configure the Integration:
+## Configure the Integration
+
+**Add Pollen DWD as a Device:**
+* Open Settings > Devices & Services.
+* Click Add Integration.
+* Search for Pollen DWD and select it.
+* Choose the corresponding Region (e.g., Saarland and Rheinland-Pfalz).
+* Select the Sub-region (e.g., Rhein, Pfalz, Nahe, and Mosel).
+* Confirm the setup.
 
 After installation, configure the integration by adding the provided YAML configuration to your `configuration.yaml` file. Ensure you specify your region and desired allergens.
 
 There is a file named `pollen_count.yml` in the root of the repository. Follow the instructions below to integrate DWD Pollenflug into your Home Assistant dashboard and configure it using YAML.
 
-**Add to Dashboard:**
+## Add to Dashboard
   - Navigate to your Home Assistant dashboard.
   - Enter the edit mode by clicking the three dots in the top right corner and selecting "Edit Dashboard".
   - Add a new card by clicking the "+" button.
