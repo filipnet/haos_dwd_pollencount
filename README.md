@@ -1,3 +1,7 @@
+![Home Assistant](https://img.shields.io/badge/Home%20Assistant-compatible-blue)
+![HACS](https://img.shields.io/badge/HACS-required-orange)
+![HACS](https://img.shields.io/badge/Mushroom_Cards-required-orange)
+
 # Home Assistant Pollen Count Integration
 
 This repository provides a YAML configuration for integrating Deutscher Wetterdienst (DWD) pollen dispersal data into Home Assistant. It utilizes the DWD Pollenflug integration and Mushroom Cards for an enhanced user interface.
