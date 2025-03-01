@@ -1,0 +1,199 @@
+square: true
+type: grid
+columns: 4
+cards:
+  - type: heading
+    heading: Pollen Count Hazard Index
+    heading_style: title
+  - type: custom:mushroom-template-card
+    entity: sensor.pollenflug_graeser_101
+    primary: Gras
+    secondary: >-
+      Today: {{ state_attr('sensor.pollenflug_graeser_101', 'state_today_desc')
+      }} Tomorrow: {{ state_attr('sensor.pollenflug_graeser_101',
+      'state_tomorrow_desc') }}
+    icon: mdi:grass
+    layout: vertical
+    icon_color: |-
+      {% if states(config.entity) | int <= 1 %}
+        green
+      {% elif states(config.entity) | int <= 2 %}
+        orange
+      {% elif states(config.entity) | int <= 3 %}
+        red
+      {% endif %}
+    tap_action:
+      action: more-info
+    hold_action:
+      action: none
+    double_tap_action:
+      action: none
+    multiline_secondary: true
+  - type: custom:mushroom-template-card
+    entity: sensor.pollenflug_ambrosia_101
+    primary: Ambrosia
+    secondary: >-
+      Today: {{ state_attr('sensor.pollenflug_ambrosia_101', 'state_today_desc')
+      }} Tomorrow: {{ state_attr('sensor.pollenflug_ambrosia_101',
+      'state_tomorrow_desc') }}
+    icon: mdi:flower-pollen
+    layout: vertical
+    icon_color: |-
+      {% if states(config.entity) | int <= 1 %}
+        green
+      {% elif states(config.entity) | int <= 2 %}
+        orange
+      {% elif states(config.entity) | int <= 3 %}
+        red
+      {% endif %}
+    tap_action:
+      action: more-info
+    hold_action:
+      action: none
+    double_tap_action:
+      action: none
+    multiline_secondary: true
+  - type: custom:mushroom-template-card
+    entity: sensor.pollenflug_beifuss_101
+    primary: Beifuss
+    secondary: >-
+      Today: {{ state_attr('sensor.pollenflug_beifuss_101', 'state_today_desc')
+      }} Tomorrow: {{ state_attr('sensor.pollenflug_beifuss_101',
+      'state_tomorrow_desc') }}
+    icon: mdi:flower-pollen
+    layout: vertical
+    icon_color: |-
+      {% if states(config.entity) | int <= 1 %}
+        green
+      {% elif states(config.entity) | int <= 2 %}
+        orange
+      {% elif states(config.entity) | int <= 3 %}
+        red
+      {% endif %}
+    tap_action:
+      action: more-info
+    hold_action:
+      action: none
+    double_tap_action:
+      action: none
+    multiline_secondary: true
+  - type: custom:mushroom-template-card
+    entity: sensor.pollenflug_birke_101
+    primary: Birke
+    secondary: >-
+      Today: {{ state_attr('sensor.pollenflug_birke_101', 'state_today_desc') }}
+      Tomorrow: {{ state_attr('sensor.pollenflug_birke_101',
+      'state_tomorrow_desc') }}
+    icon: mdi:flower-pollen
+    layout: vertical
+    icon_color: |-
+      {% if states(config.entity) | int <= 1 %}
+        green
+      {% elif states(config.entity) | int <= 2 %}
+        orange
+      {% elif states(config.entity) | int <= 3 %}
+        red
+      {% endif %}
+    tap_action:
+      action: more-info
+    hold_action:
+      action: none
+    double_tap_action:
+      action: none
+    multiline_secondary: true
+  - type: custom:mushroom-template-card
+    entity: sensor.pollenflug_erle_101
+    primary: Erle
+    secondary: >-
+      Today: {{ state_attr('sensor.pollenflug_erle_101', 'state_today_desc') }}
+      Tomorrow: {{ state_attr('sensor.pollenflug_erle_101',
+      'state_tomorrow_desc') }}
+    icon: mdi:flower-pollen
+    layout: vertical
+    icon_color: |-
+      {% if states(config.entity) | int <= 1 %}
+        green
+      {% elif states(config.entity) | int <= 2 %}
+        orange
+      {% elif states(config.entity) | int <= 3 %}
+        red
+      {% endif %}
+    tap_action:
+      action: more-info
+    hold_action:
+      action: none
+    double_tap_action:
+      action: none
+    multiline_secondary: true
+  - type: custom:mushroom-template-card
+    entity: sensor.pollenflug_hasel_101
+    primary: Hasel
+    secondary: >-
+      Today: {{ state_attr('sensor.pollenflug_hasel_101', 'state_today_desc') }}
+      Tomorrow: {{ state_attr('sensor.pollenflug_hasel_101',
+      'state_tomorrow_desc') }}
+    icon: mdi:flower-pollen
+    layout: vertical
+    icon_color: |-
+      {% if states(config.entity) | int <= 1 %}
+        green
+      {% elif states(config.entity) | int <= 2 %}
+        orange
+      {% elif states(config.entity) | int <= 3 %}
+        red
+      {% endif %}
+    tap_action:
+      action: more-info
+    hold_action:
+      action: none
+    double_tap_action:
+      action: none
+    multiline_secondary: true
+  - type: custom:mushroom-template-card
+    entity: sensor.pollenflug_esche_101
+    primary: Esche
+    secondary: >-
+      Today: {{ state_attr('sensor.pollenflug_esche_101', 'state_today_desc') }}
+      Tomorrow: {{ state_attr('sensor.pollenflug_esche_101',
+      'state_tomorrow_desc') }}
+    icon: mdi:flower-pollen
+    layout: vertical
+    icon_color: |-
+      {% if states(config.entity) | int <= 1 %}
+        green
+      {% elif states(config.entity) | int <= 2 %}
+        orange
+      {% elif states(config.entity) | int <= 3 %}
+        red
+      {% endif %}
+    tap_action:
+      action: more-info
+    hold_action:
+      action: none
+    double_tap_action:
+      action: none
+    multiline_secondary: true
+  - type: custom:mushroom-template-card
+    entity: sensor.pollenflug_roggen_101
+    primary: Roggen
+    secondary: >-
+      Today: {{ state_attr('sensor.pollenflug_roggen_101', 'state_today_desc')
+      }}  Tomorrow: {{ state_attr('sensor.pollenflug_roggen_101',
+      'state_tomorrow_desc') }}
+    icon: mdi:flower-pollen
+    layout: vertical
+    icon_color: |-
+      {% if states(config.entity) | int <= 1 %}
+        green
+      {% elif states(config.entity) | int <= 2 %}
+        orange
+      {% elif states(config.entity) | int <= 3 %}
+        red
+      {% endif %}
+    tap_action:
+      action: more-info
+    hold_action:
+      action: none
+    double_tap_action:
+      action: none
+    multiline_secondary: true
